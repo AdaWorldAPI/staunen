@@ -1,0 +1,23 @@
+[workspace]
+resolver = "2"
+members = [
+    "crates/staunen-core",
+    "crates/staunen-nsm",
+    "crates/staunen-cam",
+    "crates/staunen-bnn",
+    "crates/staunen-nars",
+    "crates/staunen-epiphany",
+    "crates/staunen-amx",
+    "crates/staunen-bench",
+]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2024"
+authors = ["Jan Hübener <jan@adaworld.api>"]
+license = "Apache-2.0"
+repository = "https://github.com/AdaWorldAPI/staunen"
+description = "When the machine is genuinely surprised. 6 CPU instructions. No GPU."
+
+[workspace.dependencies]
+blake3 = "1"
